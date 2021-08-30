@@ -8,8 +8,8 @@ cls()
 # Author: Fiorella Valdiviezo
 # Date: 23/August 2021
 #
-# Purpose: This file generates the script to build a vis of the percentage of users who use the internet by age and state in Mexico.
-# Data source: Encuesta Nacional sobre Disponibilidad y Uso de TecnologÌas de la InformaciÛn en los Hogares (ENDUTIH) 2018, INEGI.
+# Purpose: This file generates the script to build a vis of the percentage of users who use the internet by age and state in Peru.
+# Data source: ENAHO 2020 - 300 Module, INEI.
 #
 # Created files: -
 #**************************************************************************************************************************************************/
@@ -70,9 +70,9 @@ prime <- sub1 %>%
   labs(x = NULL, 
        y = NULL,
        title = " Acceso a internet por edad y dominio",
-       subtitle = str_wrap("El gr·fico superior muestra el porcentaje promedio de usuarios que utilizan internet por edad en Per˙: a los 17 aÒos el 82.6% de los usuarios acceden a internet, 
-       a partir de entonces el porcentaje comienza a reducirse. Adem·s de los niÒos de 9 aÒos, solo el 72,1% tiene acceso a Internet.
-       A los 60 aÒos, solo es el 27.2%. El gr·fico inferior ilustra el porcentaje por edad y dominio geogr·fico.", 120)) +
+       subtitle = str_wrap("El gr√°fico superior muestra el porcentaje promedio de usuarios que utilizan internet por edad en Per√∫: a los 17 a√±os el 82.6% de los usuarios acceden a internet, 
+       a partir de entonces el porcentaje comienza a reducirse. Adem√°s de los ni√±os de 9 a√±os, solo el 72,1% tiene acceso a Internet.
+       A los 60 a√±os, solo es el 27.2%. El gr√°fico inferior ilustra el porcentaje por edad y dominio geogr√°fico.", 120)) +
   theme_tufte() +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(),
